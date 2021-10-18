@@ -42,7 +42,7 @@ class JavaJdbiAutoProcessor : AbstractProcessor() {
                     .addModifiers(Modifier.PUBLIC)
                     .addAnnotation(Bean::class.java)
                     .returns(ClassName.get(typeElement.asType()))
-                    .addStatement("return this.jdbi.onDemand(${typeElement.simpleName}::class)")
+                    .addStatement("return this.jdbi.onDemand(${typeElement.simpleName}.class)")
                     .build()
             )
         }

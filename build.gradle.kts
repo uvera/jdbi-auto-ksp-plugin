@@ -10,7 +10,7 @@ repositories {
 
 allprojects {
     group = "io.uvera"
-    version = "0.0.1"
+    version = "0.1.0"
 
     tasks.withType<JavaCompile> {
         sourceCompatibility = "11"
