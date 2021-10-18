@@ -8,8 +8,6 @@ plugins {
     kotlin("plugin.spring")
 }
 
-version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
 }
