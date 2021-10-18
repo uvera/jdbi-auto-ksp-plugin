@@ -1,4 +1,5 @@
 val kspVersion: String by project
+val jdbiVersion: String by project
 
 plugins {
     kotlin("jvm")
@@ -9,14 +10,13 @@ plugins {
 }
 
 group = "io.uvera"
-version = "1.0-SNAPSHOT"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    val jdbiVersion = "3.21.0"
 
     implementation(kotlin("stdlib"))
     implementation("com.squareup:javapoet:1.12.1")
@@ -24,10 +24,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jdbi:jdbi3-core:${jdbiVersion}")
-    implementation("org.jdbi:jdbi3-sqlobject:${jdbiVersion}")
-    implementation("org.jdbi:jdbi3-kotlin:${jdbiVersion}")
-    implementation("org.jdbi:jdbi3-kotlin-sqlobject:${jdbiVersion}")
+    implementation("org.jdbi:jdbi3-core:$jdbiVersion")
+    implementation("org.jdbi:jdbi3-sqlobject:$jdbiVersion")
+    implementation("org.jdbi:jdbi3-kotlin:$jdbiVersion")
+    implementation("org.jdbi:jdbi3-kotlin-sqlobject:$jdbiVersion")
 }
 
 sourceSets.main {

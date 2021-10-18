@@ -1,3 +1,5 @@
+val jdbiVersion: String by project
+
 plugins {
     id("com.google.devtools.ksp")
     kotlin("jvm")
@@ -13,16 +15,15 @@ repositories {
 }
 
 dependencies {
-    val jdbiVersion = "3.21.0"
     implementation(kotlin("stdlib"))
     implementation(project(":processor"))
     ksp(project(":processor"))
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jdbi:jdbi3-core:${jdbiVersion}")
-    implementation("org.jdbi:jdbi3-sqlobject:${jdbiVersion}")
-    implementation("org.jdbi:jdbi3-kotlin:${jdbiVersion}")
+    implementation("org.jdbi:jdbi3-core:$jdbiVersion")
+    implementation("org.jdbi:jdbi3-sqlobject:$jdbiVersion")
+    implementation("org.jdbi:jdbi3-kotlin:$jdbiVersion")
     implementation("org.jdbi:jdbi3-kotlin-sqlobject:${jdbiVersion}")
 }
 
