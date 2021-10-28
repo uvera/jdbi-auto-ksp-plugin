@@ -1,6 +1,6 @@
 # Jdbi Auto KSP Plugin for Spring
 
-[![](https://jitpack.io/v/uvera/jdbi-auto-ksp-plugin.svg)](https://jitpack.io/#uvera/jdbi-auto-ksp-plugin)
+[![](https://jitpack.io/v/uvera/jdbi-auto-ksp-plugin.svg)](https://jitpack.io/#uvera/jdbi-auto-spring-ksp-plugin)
 
 Jdbi Auto is a [ KSP ](https://github.com/google/ksp) plugin which automatically generates JDBI SQL Object interfaces using source
 code generation by scanning for provided annotation and generating Spring @Configuration classes.
@@ -9,7 +9,7 @@ code generation by scanning for provided annotation and generating Spring @Confi
 
 Add `https://jitpack.to` to your build tool maven repositories.
 
-More info at [ jitpack.io repository ](https://jitpack.io/#uvera/jdbi-auto-ksp-plugin)
+More info at [ jitpack.io repository ](https://jitpack.io/#uvera/jdbi-auto-spring-ksp-plugin)
 
 ### Gradle setup
 
@@ -23,8 +23,8 @@ allprojects {
 ...
 
 dependencies {
-    implementation("com.github.uvera:jdbi-auto-ksp-plugin:VERSION")
-    ksp("com.github.uvera:jdbi-auto-ksp-plugin:VERSION")
+    implementation("com.github.uvera:jdbi-auto-spring-ksp-plugin:VERSION")
+    ksp("com.github.uvera:jdbi-auto-spring-ksp-plugin:VERSION")
 }
 ...
 
